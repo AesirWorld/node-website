@@ -1,0 +1,443 @@
+@font-face {
+	font-family: 'Helvetica-CondensedLight';
+	src: url('fonts/HelveticaCdLt.eot');
+	src: local('☺'), url('fonts/HelveticaCdLt.woff') format('woff'), url('fonts/HelveticaCdLt.ttf') format('truetype'), url('fonts/HelveticaCdLt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica-Condensed-Black-Se';
+	src: url('fonts/HelveticaCdBlk.eot');
+	src: local('☺'), url('fonts/HelveticaCdBlk.woff') format('woff'), url('fonts/HelveticaCdBlk.ttf') format('truetype'), url('fonts/HelveticaCdBlk.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+/*    background: url(images/bg-with-logo.jpg) no-repeat center 0px #00a8c5; */
+	background: #00a8c5;
+    font-family: 'Helvetica-CondensedLight';
+    color: #7d7d7d;
+    font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+.top {
+    width: 960px;
+	height: 265px;
+    margin: 0 auto;
+}
+.top .menu {
+    width: 960px;
+    height: 53px;
+    background: url(images/menu-bg.png);
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 100;
+    position: relative;
+}
+.top .menu > a {
+    color: #7d7d7d;
+    text-decoration: none;
+    margin: 0px 25px;
+}
+.top .menu > a:hover {
+	color:#000;
+	transition: all 0.3s ease-out;
+}
+.top .login {
+    position:relative;
+}
+.top .login > div {
+    margin-top: -5px;
+    padding-top: 10px;
+    position: absolute;
+    right:0;
+    z-index:90;
+    background: #8BBC0A;
+    font-size: 14px;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.top .login .display {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.top .login .panel, .top .login .form {
+    width: 175px;
+}
+.top .login input,
+.top .login button {
+    border: 0px;
+    border-radius: 2px;
+}
+.top .login input[type=text],
+.top .login input[type=password] {
+    display: block;
+    width: 145px;
+    margin-bottom: 4px;
+    height: 18px;
+    background-color: #fff;
+    padding: 5px;
+    color: #333;
+    transition: all 0.3s ease-out;
+    margin-left: 10px;
+}
+.top .login input[type=submit],
+.top .login input[type=button] {
+    width: 75px;
+    height: 25px;
+    background-color: #759F00;
+    color: #fff;
+    margin-top: 6px;
+    margin-bottom:10px;
+	cursor:pointer;
+}
+.top .login .form a {
+	color:#fff;
+}
+.top .login .panel strong {
+    display:block;
+    text-align:center;
+    height: 22px;
+    padding-top:7px;
+}
+.top .login .panel a {
+    display:block;
+    text-align:center;
+    height: 20px;
+    padding-top:5px;
+    background-color: #759F00;
+    transition: all 0.3s ease-out;
+    color: #fff;
+}
+.top .login .panel a:hover {
+    background-color: #7FAC08;
+}
+.top .login .panel .sub-menu {
+    width:175px;
+    position:absolute;
+    margin-left:-175px;
+    margin-top:-25px;
+}
+.top .login input[type=submit] {
+    margin-left: 10px;
+}
+.top .login input:focus {
+    outline: none;
+    border-radius: 4px;
+    border-color: #777;
+}
+.top .login .forgot {
+    font-size: 12px;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+}
+.top .logo {
+	background:url('images/logo-high-qual.png') no-repeat;
+	width:320px;
+	height:170px;
+	margin-top:5px;
+	cursor:pointer;
+}
+.lang {
+	background:#00879E;
+	border-radius:4px;
+	margin-top:15px;
+	height:20px;
+	padding:0px 8px;
+	float:left;
+}
+.top .lang a {
+	opacity:0.7;
+	width:16px;
+	height:11px;
+	display:inline-block;
+	margin:4px 4px 0px 4px;
+}
+.top .lang a:hover {
+	opacity:1;
+	transition: all 0.3s ease-out;
+}
+.top .lang .en {
+	background:url('images/flags/16/us.png') no-repeat;
+}
+.top .lang .br {
+	background:url('images/flags/16/br.png') no-repeat;
+}
+.top .lang .es {
+	background:url('images/flags/16/es.png') no-repeat;
+}
+.middle {
+    width: 960px;
+    margin: 0 auto;
+}
+.middle .slider {
+    width: 960px;
+    height: 165px;
+}
+.middle .slider .container {
+    float: left;
+}
+.middle .slider .baixe {
+    width: 275px;
+    height: 56px;
+    background: url(images/baixei-nosso-patcher.png) no-repeat;
+}
+.middle .slider .registre {
+    width: 280px;
+    height: 51px;
+    background: url(images/registre-se-no-jogo.png) no-repeat;
+}
+.middle .slider .intereja {
+    width: 276px;
+    height: 59px;
+    background: url(images/intereja-com-os-outros.png) no-repeat;
+}
+.middle .slider .slides {
+    width: 714px;
+    height: 165px;
+    float: right;
+    margin-top: -165px;
+}
+.middle .slider .navs {}
+.middle .slider .decoration {
+    width: 195px;
+    height: 105px;
+    background: url(images/slide-dec-side.png);
+    position: absolute;
+    margin: 70px 540px;
+}
+.middle > .container {
+    width: 100%;
+    min-height: 470px;
+    background: #F8F8F8;
+    margin: 3px 0px 5px 0px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.middle .container .server_status .status {
+    width: 33px;
+    height: 18px;
+    background: url(images/on-off.png);
+    float: right;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+.middle .container > .left {
+    width: 257px;
+    padding-right:4px;
+    height: 100%;
+    float: left;
+    background: url(images/shadow-widgets-left.png) no-repeat 257px 0px;
+}
+.middle .container > .middle {
+    width: 438px;
+    height: 100%;
+    float: left;
+}
+.middle .container > .right {
+    padding-left:2px;
+    height: 100%;
+    float: left;
+    background:url(images/shadow-widgets-right.png) no-repeat 0px 0px;
+}
+.box3 {
+    width: 439px;
+    min-height: 53px;
+    margin-top: 2px;
+    background: url(images/bg-middle-title.png) no-repeat;
+}
+.box2 {
+    width: 259px;
+    min-height: 53px;
+    background: url(images/bg-sidebar-title.png) no-repeat;
+}
+.box3 {
+    width: 100%;
+    min-height: 53px;
+    margin-top: 2px;
+    margin-right:1px;
+    background: url(images/bg-title-plain-left.png) no-repeat left top,
+                url(images/bg-title-plain-right.png) no-repeat right top,
+                url(images/bg-title-plain.png) repeat-x;
+}
+.box-menu {
+    width: 100%;
+    min-height: 55px;
+    background: url(images/bg-sub-menu.png) repeat-x;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.box3 > .content, .box3 > .content, .box-menu > .content {
+    padding:10px;
+}
+.news > .title {
+    background: url(images/book-dec.png) no-repeat;
+    background-position: 96% 2px;
+    background-size: 37px 41px;
+    /* width: 100%; */
+}
+.news .content > div {
+    height: 28px;
+}
+.news .content > div:first-child {
+    margin-top: 5px;
+}
+.news .content > div:last-child {
+    margin-bottom: 10px;
+}
+.news div > .title {
+    display: inline-block;
+    width: 340px;
+    overflow: hidden;
+    line-height:25px;
+}
+.news div > .title a {
+    color: #7d7d7d;
+    font-size:15px;
+}
+.news div > .date {
+    padding: 4px 9px;
+    margin-right:6px;
+    float: right;
+    background: #18C0CC;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.box3 > .title,
+.box2 > .title,
+.box3 > .title {
+    min-height: 53px;
+    padding-left: 15px;
+    line-height: 53px;
+    font-family: 'Helvetica-Condensed-Black-Se';
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.box3 td, .box3 tr {
+    padding:10px;
+}
+.ranking .title {
+    background: url(images/crown.png) no-repeat;
+    background-position: 88% 2px;
+    background-size: 43px 41px;
+    width: 100%;
+}
+.woe .title {
+    background: url(images/emperium.png) no-repeat;
+    background-position: 88% 5px;
+    background-size: 32px 41px;
+    width: 100%;
+}
+.ranking th {
+    text-align: left;
+}
+.content .ranking td:nth-child(1) {
+    width: 85%;
+}
+.content .ranking .name {
+    margin-left: 14px;
+    display: inline-block;
+}
+.content .ranking td:nth-child(2) {
+    width: 15%;
+}
+.ranking tr:nth-child(2) td:nth-child(1) {
+    background: url(images/rank-first-medal.png) no-repeat;
+    background-size: 12px 16px;
+}
+.woe .content {
+    background: url(images/knight-woe-bg.png) no-repeat 0px 0px;
+    padding-top: 20px;
+}
+.woe-info {
+    background: url(images/emperium.png) no-repeat;
+    width: 100px;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    color: #00A9C7;
+}
+.woe-info .day {
+    font-size: 20px;
+}
+.woe-info .hour {
+    font-size: 12px;
+}
+.rank-skills .title {
+    background: url(images/coffen.png) no-repeat;
+    background-position: 88% 5px;
+    background-size: 31px 40px;
+    width: 100%;
+}
+.register  .title {
+    background: url(images/scroll-art.png) no-repeat;
+    background-position: 95% 1px;
+    background-size: 36px 51px;
+}
+.register button[type=submit] {
+    background: url(images/registrar-btn.png) no-repeat !important;
+    width:108px;
+    height:49px;
+    border:0;
+    cursor:pointer;
+}
+.register .register-art {
+    background: url(images/register-art-play.png) no-repeat;
+    width:266px;
+    height:194px;
+    margin:50px 0 0 100px;
+}
+.bottom {
+    width: 960px;
+    height: 70px;
+    margin: 0 auto;
+    background: url(images/bottom-bg.png) no-repeat;
+}
+.bottom .logo {
+    width: 80px;
+    height: 43px;
+	background:url('images/logo-high-qual.png') no-repeat;
+	background-size: contain;
+    margin: 13px 20px;
+    float: left;
+}
+.bottom .logo2 {
+    width: 50px;
+    height: 54px;
+    background: url(images/cre-pixel.png) no-repeat;
+    margin: 8px 20px;
+    float: right;
+}
+.bottom .text {
+    text-align: center;
+    width: 320px;
+    margin: 15px 210px;
+    font-size: 10px;
+    float: left;
+    color: #7a7a7a;
+    font-family: Arial, sans-serif;
+}
+.HelveticaB {
+    font-family: 'Helvetica-Condensed-Black-Se' !important;
+}
+.fb-like-box {
+    width: 255px;
+    height: 200px;
+    overflow: hidden;
+}

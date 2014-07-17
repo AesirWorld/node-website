@@ -1,0 +1,11 @@
+{
+    "name": "aesir-website-pages-facet",
+    "version": "0.0.1",
+    "description": "General facets, mostly information pages & the homepage",
+    "main": "index.js",
+    "scripts": {
+    "test": "lab -vC"
+    },
+    "author": "herenow",
+    "license": "MIT"
+}

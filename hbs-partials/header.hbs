@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{{#if title}} {{title}} {{else}} Aesir World {{/if}}</title>
+		<link rel="canonical" href="<%= canonicalHref %>">
+		<link rel="icon" type="image/png" href="/static/images/favicon.png" />
+		<link rel="stylesheet" href="/static/global.css" type="text/css" media="screen" title="" charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+        $(document).ready(function () {
+
+            var showTabbedMenu = function (event) {
+                $('.login .display').hide(300);
+                $('.login .panel, .login .form').show(300);
+
+                event.stopPropagation();
+                return false;
+            }
+
+            var hideTabbedMenu = function (event) {
+                $('.login .panel, .login .form').hide(300);
+                $('.login .display').show(300);
+            }
+
+            $('.login .panel, .login .form').hide();
+
+            $('.login .display').on('click', showTabbedMenu);
+
+            if (!$('.login').hasClass('clicking')) { //not have
+                $('.login .display').mouseenter(showTabbedMenu);
+                $('.login .panel, .login .form').mouseleave(hideTabbedMenu);
+            }
+
+            $('.login .panel, .login .form').click(function (event) {
+                event.stopPropagation();
+                return true;
+            });
+
+            $(document).on('click', hideTabbedMenu);
+
+            /* Sub menu */
+            var showSubMenu = function (event) {
+                var submenu = $(this).data('sub-menu');
+                console.log("#sub-menu-" + submenu);
+                $('.top .login .panel .sub-menu').stop(true, true).hide(150);
+                $("#sub-menu-" + submenu).stop(true, true).show(150);
+
+                event.stopPropagation();
+                return true;
+            }
+
+            var hideSubMenu = function (event) {
+                $(this).hide(150);
+            }
+
+            $('.top .login .panel .sub-menu').hide();
+            $('.top .login .panel > a').on('click', showSubMenu);
+            $('.top .login .panel > a').mouseenter(showSubMenu);
+            $('.top .login .panel .sub-menu').mouseleave(hideSubMenu);
+
+            /* Check if theres a request to hide right or left container */
+            var left   = $('.middle .container > .left');
+            var middle = $('.middle .container > .middle');
+            var right  = $('.middle .container > .right');
+
+            if( $('.hide_right_container').length ) {
+                var new_width = middle.width() + right.width() + parseInt(right.css('padding-left')) + parseInt(right.css('padding-right'));
+                right.hide();
+                middle.width(new_width);
+            }
+            if( $('.hide_left_container').length ) {
+                var new_width = middle.width() + left.width() + parseInt(left.css('padding-left')) + parseInt(left.css('padding-right'));
+                left.hide();
+                middle.width(new_width);
+            }
+        });
+		</script>
+	</head>
+<body>
+
+	<div class="top">
+		<div class="menu">
+			<a href="home">Home</a>
+			<a href="http://play.aesirworld.com/">Play</a>
+			<a href="register">Register</a>
+			<a href="forum">Forum</a>
+			<a href="database">Database</a>
+		</div>
+
+		<div onclick="window.location='/';" class="logo"></div>
+
+		<div class="lang">
+			<a class="en" href="/en"></a>
+			<a class="es" href="/es"></a>
+			<a class="br" href="/br"></a>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="container">
+			<div class="left">
+				<div class="server_status" style="height:85px; font-size:18px;">
+					<div style="float:left; margin:10px 15px;">
+						<div style="margin:10px 0px">SERVER:<div class="status"></div></div>
+						<div style="margin:10px 0px">STAFF:<div class="status"></div></div>
+					</div>
+					<div style="float:right; text-align:right; margin:20px 15px;">
+						<div style="font-size:13px; margin-right:3px;">Players:</div>
+						<div style="font-style:bold; font-size:40px;" class="HelveticaB">1961</div>
+					</div>
+				</div>
+
+				<div class="box2 ranking">
+					<div class="title">Ranking</div>
+					<div class="content">
+					<table class="ranking">
+						<tr>
+						<td><span>Name</span></td>
+						<td><span>Level</span></td>
+						</tr>
+						<tr>
+							<td><span class="name">John</span></td>
+							<td><span class="level">99</span></td>
+						</tr>
+					</table>
+					</div>
+				</div>
+
+				<div class="box2 woe">
+					<div class="title">Woe</div>
+					<div class="content">
+					<div class="woe-info">
+						<span class="day">Segundas</span><br/>
+						<span class="hour">19~20h</span>
+					</div>
+					<div class="woe-info">
+						<span class="day">Segundas</span><br/>
+						<span class="hour">19~20h</span>
+					</div>
+					<div class="woe-info">
+						<span class="day">Segundas</span><br/>
+						<span class="hour">19~20h</span>
+					</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="middle">
